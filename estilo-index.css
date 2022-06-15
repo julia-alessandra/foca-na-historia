@@ -1,0 +1,45 @@
+/**Geral**/
+body{
+    background-color: #4b693e;
+}
+
+/**Estilo do menu**/
+#menu {
+    position: absolute;
+    left: -201px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    color:white;
+    background-color: #394435;
+    border: 1px solid rgb(34, 56, 31);
+    box-shadow: 2px 2px 3px rgb(59, 90, 65);
+    transition: all 200ms ease-out;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  body.menu-visivel > #menu {
+    left: 0;
+  }
+  
+  body.menu-visivel > main {
+    left: 200px;
+  }
+  
+  body.menu-visivel {
+    overflow-x: hidden;
+  }
+  
+  main {
+    position: relative;
+    left: 0;
+    transition: left 200ms ease-out;
+    padding: 0.5em;
+  }
+
+  #alterna-menu{
+    margin-top: 10px;
+    width: 40px;
+    float: left;
+  }
