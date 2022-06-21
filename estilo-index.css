@@ -45,10 +45,14 @@ body{
     padding-bottom: 350px;
   }
 
-  #alterna-menu{
+   #alterna-menu{
     margin-top: 10px;
     width: 40px;
     float: left;
+    color: white;
+    border: 2px solid white;
+    padding: 2px;
+    text-align: center;
   }
 
   #recentes{
