@@ -15,8 +15,8 @@ body{
     border: 1px solid rgb(34, 56, 31);
     box-shadow: 2px 2px 3px rgb(59, 90, 65);
     transition: all 200ms ease-out;
-    text-align: center;
     padding-top: 10px;
+    text-align: center;
   }
   
   body.menu-visivel > #menu {
@@ -37,9 +37,38 @@ body{
     transition: left 200ms ease-out;
     padding: 0.5em;
   }
+  h1{
+    color: white;
+    text-align: center;
+  }
+  #temas{
+    padding-bottom: 350px;
+  }
 
   #alterna-menu{
     margin-top: 10px;
     width: 40px;
     float: left;
+  }
+
+  #recentes{
+    background-color: aliceblue;
+    padding-top: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    float: left;
+    margin-right: 90px;
+  }
+  .limpa-limpa{
+    clear: left;
+    margin-left: 100px;
+  }
+
+  #futura-galeria{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
   }
