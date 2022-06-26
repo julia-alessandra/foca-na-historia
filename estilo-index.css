@@ -19,60 +19,74 @@ body{
     text-align: center;
   }
   
-  body.menu-visivel > #menu {
+  .menu-visivel > #menu {
     left: 0;
   }
   
-  body.menu-visivel > main {
+  .menu-visivel > main {
     left: 200px;
   }
   
-  body.menu-visivel {
+  .menu-visivel {
     overflow-x: hidden;
   }
   
-  main {
+  .main {
     position: relative;
     left: 0;
     transition: left 200ms ease-out;
     padding: 0.5em;
   }
+
   h1{
     color: white;
     text-align: center;
   }
-  #temas{
-    padding-bottom: 350px;
-  }
 
-   #alterna-menu{
+  #alterna-menu{
     margin-top: 10px;
     width: 40px;
     float: left;
     color: white;
-    border: 2px solid white;
     padding: 2px;
     text-align: center;
   }
 
-  #recentes{
-    background-color: aliceblue;
-    padding-top: 200px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+  #img-recentes{
     width: 200px;
+    clear: right;
     float: left;
-    margin-right: 90px;
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
   }
-  .limpa-limpa{
-    clear: left;
-    margin-left: 100px;
+  #bloco{
+    background-color: #a1ad9b;
+    float: left;
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  #recentes{
+    width: 200px;
+  
   }
 
   #futura-galeria{
     display: block;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
+  }
+  /**ESTILO DOS LINKS**/
+  a:link {
+    color:rgb(220, 248, 211);
+    text-decoration:double
+  }
+  a:visited{
+    color: #a1ad9b;
+    text-decoration: none;
   }
