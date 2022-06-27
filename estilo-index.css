@@ -1,22 +1,92 @@
 /**Geral**/
-body{
+
+body {
     background-color: #4b693e;
 }
 
 
-  .main {
+/**Estilo do menu**/
+
+#menu {
+    position: absolute;
+    left: -201px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    color: white;
+    background-color: #394435;
+    border: 1px solid rgb(34, 56, 31);
+    box-shadow: 2px 2px 3px rgb(59, 90, 65);
+    transition: all 200ms ease-out;
+    padding-top: 10px;
+    text-align: center;
+}
+
+body.menu-visivel>#menu {
+    left: 0;
+}
+
+body.menu-visivel>main {
+    left: 200px;
+}
+
+body.menu-visivel {
+    overflow-x: hidden;
+}
+
+main {
     position: relative;
     left: 0;
     transition: left 200ms ease-out;
     padding: 0.5em;
-  }
+}
 
-  h1{
+#alterna-menu {
+    margin: 0 0.5em 0 0;
+    cursor: pointer;
+}
+
+.hamburguer {
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    border-radius: 3px;
+    border: 1px solid silver;
+    text-align: center;
+    line-height: 2em;
+    box-sizing: border-box;
+    color: white;
+}
+
+.hamburguer:hover {
+    border-color: gray;
+}
+
+#alterna-menu span {
+    position: relative;
+}
+
+#alterna-menu:active span {
+    left: 1px;
+    top: 1px;
+}
+
+.half {
+    transform: scale(0.5);
+}
+
+
+/**resto**/
+
+h1 {
     color: white;
     text-align: center;
-  }
+}
 
-  #img-recentes{
+
+/**blocos recentes**/
+
+#img-recentes {
     width: 200px;
     clear: right;
     float: left;
@@ -24,85 +94,58 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
 
-  }
-  #bloco{
+#bloco {
     background-color: #a1ad9b;
     float: left;
     width: 250px;
     margin-left: 50px;
-  }
+}
 
-  #recentes{
+#peruca {
+    background-color: #a1ad9b;
+    float: left;
+    width: 250px;
+    margin-left: 50px;
+}
+
+#met-gala {
+    background-color: #a1ad9b;
+    float: left;
+    width: 250px;
+    margin-left: 50px;
+}
+
+#recentes {
     width: 200px;
-  
-  }
+    padding-left: 32px;
+    padding-right: 32px;
+}
 
-  #futura-galeria{
+#blocao {
+    display: flex;
+    justify-content: center;
+}
+
+#futura-galeria {
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-  }
-  /**ESTILO DOS LINKS**/
-  a:link {
-    color:rgb(220, 248, 211);
-    text-decoration:double
-  }
-  a:visited{
+    width: 950px;
+    height: 500px;
+}
+
+
+/**ESTILO DOS LINKS**/
+
+a:link {
+    color: rgb(220, 248, 211);
+    text-decoration: double
+}
+
+a:visited {
     color: #a1ad9b;
     text-decoration: none;
-  }
-#peruca {
-  background-color: #a1ad9b;
-  float: left;
-  width: 250px;
-  margin-left: 50px;
-
 }
-
-#navMenu > span {
-  display: block;
-  width: 28px;
-  height: 2px;
-  border-radius: 9999px;
-  background-color:#4b693e;
-}
-
-#navMenu > span:not(:last-child) {
-  margin-bottom: 7px;
-}
-
-#navMenu, #navMenu > span {
-  transition: all .4s ease-in-out;
-}
-
-#navMenu.active {
-  transition-delay: 0.8s;
-  transform: rotate(45deg);
-}
-
-#navMenu.active > span:nth-child(2) {
-  width: 0;
-}
-
-#navMenu.active > span:nth-child(1),
-#navMenu.active > span:nth-child(3) {
-  transition-delay: .4s;
-}
-
-#navMenu.active > span:nth-child(1) {
-  transform: translateY(9px);
-} 
-
-#navMenu.active > span:nth-child(3) {
-  transform: translateY(-9px) rotate(90deg);
-}
-
-#met-gala {
-  background-color: #a1ad9b;
-  float: right;
-  width: 250px;
-  margin-left: 50px;
-} 
