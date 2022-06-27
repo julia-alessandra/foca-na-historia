@@ -3,34 +3,7 @@ body{
     background-color: #4b693e;
 }
 
-/**Estilo do menu**/
-#menu {
-    position: absolute;
-    left: -201px;
-    top: 0;
-    bottom: 0;
-    width: 200px;
-    color:white;
-    background-color: #394435;
-    border: 1px solid rgb(34, 56, 31);
-    box-shadow: 2px 2px 3px rgb(59, 90, 65);
-    transition: all 200ms ease-out;
-    padding-top: 10px;
-    text-align: center;
-  }
-  
-  .menu-visivel > #menu {
-    left: 0;
-  }
-  
-  .menu-visivel > main {
-    left: 200px;
-  }
-  
-  .menu-visivel {
-    overflow-x: hidden;
-  }
-  
+
   .main {
     position: relative;
     left: 0;
@@ -40,15 +13,6 @@ body{
 
   h1{
     color: white;
-    text-align: center;
-  }
-
-  #alterna-menu{
-    margin-top: 10px;
-    width: 40px;
-    float: left;
-    color: white;
-    padding: 2px;
     text-align: center;
   }
 
@@ -90,3 +54,55 @@ body{
     color: #a1ad9b;
     text-decoration: none;
   }
+#peruca {
+  background-color: #a1ad9b;
+  float: left;
+  width: 250px;
+  margin-left: 50px;
+
+}
+
+#navMenu > span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color:#4b693e;
+}
+
+#navMenu > span:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+#navMenu, #navMenu > span {
+  transition: all .4s ease-in-out;
+}
+
+#navMenu.active {
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+#navMenu.active > span:nth-child(2) {
+  width: 0;
+}
+
+#navMenu.active > span:nth-child(1),
+#navMenu.active > span:nth-child(3) {
+  transition-delay: .4s;
+}
+
+#navMenu.active > span:nth-child(1) {
+  transform: translateY(9px);
+} 
+
+#navMenu.active > span:nth-child(3) {
+  transform: translateY(-9px) rotate(90deg);
+}
+
+#met-gala {
+  background-color: #a1ad9b;
+  float: right;
+  width: 250px;
+  margin-left: 50px;
+} 
