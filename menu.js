@@ -1,7 +1,10 @@
+
 /**Java script do menu**/
+let botaoEl = document.querySelector('#alterna-menu');
+let bodyEl = document.querySelector('body');
 
-const navMenu = document.querySelector("#navMenu");
+function alternaMenu() {
+  bodyEl.classList.toggle('menu-visivel');
+}
 
-navMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+botaoEl.addEventListener('click', alternaMenu);
