@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
+
+/**Geral**/
+
+body {
+    background-color: #6f8f72;
+}
+
+
+/**Estilo do menu**/
+
+#menu {
+    position: absolute;
+    left: -201px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    color: white;
+    background-color: #394435;
+    border: 1px solid rgb(34, 56, 31);
+    box-shadow: 2px 2px 3px rgb(59, 90, 65);
+    transition: all 200ms ease-out;
+    padding-top: 10px;
+    text-align: center;
+}
+
+body.menu-visivel>#menu {
+    left: 0;
+}
+
+body.menu-visivel>main {
+    left: 200px;
+}
+
+body.menu-visivel {
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    left: 0;
+    transition: left 200ms ease-out;
+    padding: 0.5em;
+}
+
+#alterna-menu {
+    margin: 0 0.5em 0 0;
+    cursor: pointer;
+}
+
+.hamburguer {
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    border-radius: 3px;
+    border: 1px solid silver;
+    text-align: center;
+    line-height: 2em;
+    box-sizing: border-box;
+    color: white;
+}
+
+.hamburguer:hover {
+    border-color: gray;
+}
+
+#alterna-menu span {
+    position: relative;
+}
+
+#alterna-menu:active span {
+    left: 1px;
+    top: 1px;
+}
+
+.half {
+    transform: scale(0.5);
+}
+
+
+/**resto**/
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+#imagem-m{
+    width: 250px;
+    border-radius: 50%;
+    border: solid 5px palevioletred;
+}
+
+#imagem-j{
+    width: 250px;
+    border-radius: 50%;
+    border: solid 5px rgb(86, 67, 168);
+}
+
+#madu, #julia{
+    background-color: #77ad78;
+    margin-left: 0px;
+    padding-right: 120px;
+    margin-bottom: 50px;
+    border:solid 2px #394435;
+    
+} 
+#madu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#julia{
+    display: flex;
+    justify-content: flex-end;
+}
+p{
+    font-size: 25px;
+    font-family: 'Trispace', sans-serif;
+    
+}
+
+/**ESTILO DOS LINKS**/
+
+a:link {
+    color: rgb(220, 248, 211);
+    text-decoration: double
+}
+
+a:visited {
+    color: #a1ad9b;
+    text-decoration: none;
+}
