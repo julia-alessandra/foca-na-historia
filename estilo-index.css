@@ -78,67 +78,56 @@ main {
 
 /**resto**/
 
-h1 {
-    color: white;
+#h1{
+    margin: auto;
+    position: relative;
+    transform-origin: bottom left;
+    transform: rotate(-61deg);
+    height: 300px;
+    width: 300px;
     text-align: center;
-}
+    color: #394435;
+    margin:auto;
+  }
+  
+  #h1 div {
+    display: inline-block;
+    font: 900 1.5em Monaco, Monospace;
+    color: #000000;
+    height: 300px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+    margin:auto;
+  }
 
+  h2{
+      text-align: center;
+  }
 
 /**blocos recentes**/
-
-#img-recentes {
-    width: 200px;
-    clear: right;
-    float: left;
-    padding: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+img{
+    width: 300px;
 }
 
-#bloco {
-    background-color: #a1ad9b;
-    float: left;
-    width: 250px;
-    margin-left: 50px;
+.text{
+    width: 150px;
 }
-
-#peruca {
-    background-color: #a1ad9b;
-    float: left;
-    width: 250px;
-    margin-left: 50px;
+th{
+    padding: 20px;
 }
-
-#met-gala {
-    background-color: #a1ad9b;
-    float: left;
-    width: 250px;
-    margin-left: 50px;
-}
-
-#recentes {
-    width: 200px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-#blocao {
-    display: flex;
-    justify-content: center;
-}
-
-#futura-galeria {
-    display: block;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 950px;
-    height: 500px;
+table{
+    margin: auto;
 }
 
 
 /**ESTILO DOS LINKS**/
+
+a{
+    font-size: 20px;
+}
 
 a:link {
     color: rgb(220, 248, 211);
