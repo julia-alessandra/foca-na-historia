@@ -78,7 +78,7 @@ main {
 
 /**resto**/
 
-#h1{
+#container{
     margin: auto;
     position: relative;
     transform-origin: bottom left;
@@ -90,7 +90,7 @@ main {
     margin:auto;
   }
   
-  #h1 div {
+  #container div {
     display: inline-block;
     font: 900 1.5em Monaco, Monospace;
     color: #000000;
