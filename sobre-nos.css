@@ -4,6 +4,7 @@
 
 body {
     background-color: #6f8f72;
+    background-image: url(imgs/imagem\ papel.jpg);
 }
 
 
@@ -37,6 +38,8 @@ body.menu-visivel {
 }
 
 main {
+    display: grid;
+    grid-template: 4 / 4;
     position: relative;
     left: 0;
     transition: left 200ms ease-out;
@@ -83,26 +86,26 @@ main {
 h1, h2 {
     color: white;
     text-align: center;
+    font-family: 'Seagram', sans-serif;
+
 }
 
 #imagem-m{
     width: 250px;
     border-radius: 50%;
     border: solid 5px palevioletred;
+    float: left;
 }
 
 #imagem-j{
     width: 250px;
     border-radius: 50%;
     border: solid 5px rgb(86, 67, 168);
+    float:right;
+
+
 }
 
-#madu, #julia{
-    background-color: #77ad78;
-    margin-left: 0px;
-    padding-right: 120px;
-    margin-bottom: 50px;
-    border:solid 2px #394435;
     
 } 
 #madu{
@@ -131,3 +134,35 @@ a:visited {
     color: #a1ad9b;
     text-decoration: none;
 }
+
+
+.container {
+    margin: auto;
+    position: relative;
+    transform-origin: bottom left;
+    transform: rotate(-61deg);
+    height: 200px;
+    width: 200px;
+  }
+  
+  .container div {
+    display: inline-block;
+    font-family: 900 1.5em 'Seagram', sans-serif;
+    height: 200px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #pessoa{
+    text-align: top;
+  }
+
+ #fontes {
+     flex-direction: column;
+     grid-area: 3 / 2 / 4 / 3;
+  }
