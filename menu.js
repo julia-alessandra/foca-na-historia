@@ -1,4 +1,3 @@
-
 /**Java script do menu**/
 let botaoEl = document.querySelector('#alterna-menu');
 let bodyEl = document.querySelector('body');
@@ -9,9 +8,11 @@ function alternaMenu() {
 
 botaoEl.addEventListener('click', alternaMenu);
 
+/**js do titulo*/
+
 let deg = 6;
 for (let i = 1; i <= 20; i++) {
-  let div = document.querySelector(".container div:nth-child(" + i + ")");
+  let div = document.querySelector("#container div:nth-child(" + i + ")");
   div.style.transform = 'rotate(' + deg + 'deg)';
   deg = deg + 6;
 }
