@@ -1,22 +1,27 @@
 <html>
 
 <head>
-    <title>Fofoca na historia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fofoca na história</title>
     <link rel="icon" href="imgs/dobradura_icon.png">
     <link rel="stylesheet" href="estilo-index.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
-<nav id="menu">
-    <ul id="temas">
-        <a href="index.html">Página inicial</a><br>
-        <a href="primeira-guerra.html">Primeira guerra</a><br>
-        <a href="segunda-guerra.html">Segunda guerra</a><br>
-        <a href="brasil-colonia.html">Brasil colônia</a><br>
-        <a href="sobre-nos.html">Sobre nós</a>
+<header>
+  <span id="alterna-menu" class="menu-visivel"><span id="hamburguer">☰</span></span>
+  <nav id="menu-principal">
+    <ul>
+      <a href="index.html">Página inicial</a>
+      <a href="materias.html">Materias</a>
+      <a href="boatos.html">Boatos</a>
+      <a href="sobre-nos.html">Sobre as criadoras</a>
     </ul>
-</nav>
-<span id="alterna-menu" class="hamburguer"><span>☰</span></span>
-<div id="container">
+  </nav>
+</header>
+
+<h1 id="container">
     <div>F</div>
     <div>o</div>
     <div>f</div>
@@ -31,46 +36,62 @@
     <div>i</div>
     <div>s</div>
     <div>t</div>
-    <div>o</div>
+    <div>ó</div>
     <div>r</div>
     <div>i</div>
     <div>a</div>
     <div> </div>
+</h1>
 </div>
-</header>
-
-<table id="tabela">
-    <caption>Noticias mais ou menos recentes</caption>
-    <tbody>
-        <tr>
-            <th><img src="imgs/peruca-branca.jfif" alt="Homem de peruca branca" id="img"></th>
-            <th><img src="imgs/reis-franca.jfif" alt="rei da frança" id="img"></th>
-            <th><img src="imgs/met-gala.jfif" alt="mulher francesa do met gala" id="img"></th>
-            <th><img src="imgs/the-crown.jfif" alt="Poster da serie the crown" id="img"></th>
-        </tr>
-        <tr id="text">
-            <th>Porque antigamente usavam perucas brancas</th>
-            <th>Coisas que você não sabia sobre os reis da frança</th>
-            <th>A origem da moda:da França para o mundo</th>
-            <th>Filmes e series para estudar historia</th>
-        </tr>
-        <tr>
-            <th><img src="imgs/d-pedro.jfif" alt="Pintura de Dom Pedro e leopoldina" id="img"></th>
-            <th><img src="imgs/venus.jfif" alt="Quadro o nacimento de Venus"></th>
-            <th><img src="imgs/henriqueVIII.jfif" alt="Imagem de Henrique VIII"></th>
-            <th><img src="imgs/grecia.jfif" alt="Grecia antiga"></th>
-        </tr>
-        <tr id="text">
-            <th>Os pulos de cerca de Dom Pedro</th>
-            <th>Renacimento, nft e revoluções artisticas</th>
-            <th>Henrique III, o ultimo romântico</th>
-            <th>Grecia antiga, uma grande parada gay</th>
-        </tr>
-
-    </tbody>
 
 
-</table>
+
+<section>
+    <h2>Noticias mais ou menos recentes</h2>
+    <div id="Noticias">
+      <article>
+        <img src="imgs/peruca-branca.jfif">
+        <h3>Perucas brancas</h3>
+        <p>Por que as pessoas antigamente usavam perucas brancas?<a href="materias.html">descubra agora</a></p>
+      </article>
+      <article>
+        <img src="imgs/reis-franca.jfif">
+        <h3>Reis da França</h3>
+        <p>O que comiam? O que vestiam? Quais manias estranhas eles tinham?<a href="materias.html">curiosidades sobre eles</a></p>
+      </article>
+      <article>
+        <img src="imgs/met-gala.jfif">
+        <h3>A história da moda</h3>
+        <p>A moda da frança para o mundo,<a href="materias.html">veja o que as modelos usavam</a>(menos as da época de 90)</p>
+      </article>
+      <article>
+        <img src="imgs/the-crown.jfif">
+        <h3>Filmes e series para estudar</h3>
+        <p>Não aguenta mais ler livros chatos para aprender a matéria?<a href="materias.html">Veja nossa lista de filmes e series com assuntos historicos</a></p>
+      </article>
+      <article>
+        <img src="imgs/d-pedro.jfif">
+        <h3>As puladas de cerca de Don Pedro II</h3>
+        <p>Nem tudo são rosas nos casamentos reais, <a href="materias.html">veja a historia das cartas que o rei trocava com sua amante</a></p>
+      </article>
+      <article>
+        <img src="imgs/venus.jfif">
+        <h3>Renacimento, uma revolução artistica</h3>
+        <p>Os quadros renacentistas são quase NFT's do passado?<a href="materias.html">Veja mais</a></p>
+      </article>
+      <article>
+        <img src="imgs/henriqueVIII.jfif">
+        <h3>Henrique VIII, o último romântico</h3>
+        <p>Com o número de casamentos parecido com o de Evelyn Hugo, <a href="materias.html">veja sobre as 6 esposas de henrique VIII</a></p>
+      </article>
+      <article>
+        <img src="imgs/grecia.jfif">
+        <h3>Grecia, uma grande parada gay</h3>
+        <p>Com costumes e relacionamentos diferentes <a href="materias.html">Leia sobre a grecia</a></p>
+      </article>
+    </div>
+  </section>
+  <img src="imgs/relogio.png" id="relogio">
 
     
 <script src="menu.js"></script>
