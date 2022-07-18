@@ -1,0 +1,61 @@
+body{
+    background-image: url(imgs/papel-velho.jfif);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+  article{
+    font-size: 120%;
+}
+  
+  #cartas, #rainhas{
+    margin-left: 7%;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+mark{
+    background-color: #2262;
+    transition:  background-color 600ms linear;
+    
+}
+
+  mark:hover {
+   background-color: rgb(228, 157, 228);
+  }
+
+#voce-sabia{
+    text-align: center;
+    background-color: #2262;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
+
+#sumario{
+    background-color: #2262;
+    width: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    float: left;
+    margin-right: 2%;
+}
+
+section{
+    margin-top: 5%;
+}
+
+@media (max-width: 500px) {
+
+    #sumario{
+        float: none;
+    }
+}
+
+/**estou perdendo a cabeça*/
+

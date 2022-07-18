@@ -1,0 +1,25 @@
+body{
+    background-image: url(imgs/papel-velho.jfif);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+p{
+    font-size: 120%;
+}
+h1, h2{
+    text-align: center;
+}
+h2{
+    
+    margin-top: 3%;
+}
+
+#img{
+    width: 25%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    border: 2px solid #2264;
+}
+
