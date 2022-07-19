@@ -5,8 +5,9 @@
     display: flex;
     justify-content: space-around;
   }
+
   
-  #menu-principal li {
+  #menu-principal a {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
@@ -17,11 +18,11 @@
     cursor: pointer;
   }
   
-  #menu-principal li:hover {
-    background-color: #eeec;
+  #menu-principal a:hover {
+    background-color: #2264;
   }
   
-  #menu-principal li::before {
+  #menu-principal a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -33,11 +34,11 @@
     transition: inherit;
   }
   
-  #menu-principal li.menu-ativo~li::before {
+  #menu-principal a.menu-ativo~li::before {
     transform: translatex(-100%);
   }
   
-  #menu-principal li.menu-ativo::before {
+  #menu-principal a.menu-ativo::before {
     transform: translateX(0);
   }
 
