@@ -54,6 +54,8 @@
     border: 1px black solid;
     padding: 2px;
     border-radius: 3px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 
 
@@ -90,4 +92,10 @@
       flex-direction: column;
       text-align: center;
     }
+}
+
+/**links**/
+a:link {
+  color: darkolivegreen;
+  font-size: 130%;
 }
