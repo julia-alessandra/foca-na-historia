@@ -146,18 +146,23 @@ body {
   
   text {
     fill:darkolivegreen;
-    padding: auto;
+    
   }
   
 
   #pessoa{
     text-align: top;
+    font-size: 20px;
   }
 
  #fontes {
   text-align:center;
+  color: darkolivegreen;
   }
 
 #curve {
     padding-left: 50%;
+}
+a:link {
+    color: darkolivegreen;
 }
