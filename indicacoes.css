@@ -23,3 +23,8 @@ h2{
     border: 2px solid #2264;
 }
 
+#box {
+    position: relative;
+    left: 25%;
+
+}
